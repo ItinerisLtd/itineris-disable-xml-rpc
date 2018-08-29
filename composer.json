@@ -1,0 +1,53 @@
+{
+    "name": "itinerisltd/itineris-disable-xml-rpc",
+    "type": "wordpress-plugin",
+    "description": "Disable WordPress XML-RPC via actions and filters.",
+    "keywords": [
+        "security",
+        "wordpress",
+        "xml-rpc"
+    ],
+    "homepage": "https://itinerisltd.github.io/itineris-disable-xml-rpc/",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Itineris Limited",
+            "email": "hello@itineris.co.uk",
+            "homepage": "https://itineris.co.uk/",
+            "role": "Company"
+        },
+        {
+            "name": "Tang Rufus",
+            "email": "tangrufus@gmail.com",
+            "homepage": "https://typist.tech/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "config": {
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    },
+    "prefer-stable": true,
+    "scripts": {
+        "pretag": [
+            "composer update",
+            "composer normalize",
+            "github_changelog_generator --no-verbose"
+        ]
+    },
+    "support": {
+        "email": "hello@itineris.co.uk",
+        "issues": "https://github.com/ItinerisLtd/itineris-disable-xml-rpc/issues",
+        "source": "https://github.com/ItinerisLtd/itineris-disable-xml-rpc"
+    }
+}
