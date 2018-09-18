@@ -17,10 +17,10 @@ if (! defined('WPINC')) {
     die;
 }
 
-apply_filters('xmlrpc_enabled', '__return_false', PHP_INT_MAX);
+add_filter('xmlrpc_enabled', '__return_false', PHP_INT_MAX);
 
-apply_filters('xmlrpc_methods', '__return_empty_array', PHP_INT_MAX);
+add_filter('xmlrpc_methods', '__return_empty_array', PHP_INT_MAX);
 
-apply_filters('xmlrpc_element_limit', function (): int {
+add_filter('xmlrpc_element_limit', function (): int {
     return 1;
 }, PHP_INT_MAX);
