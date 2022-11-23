@@ -3,7 +3,7 @@
  * Plugin Name:     Itineris Disable XML-RPC
  * Plugin URI:      https://github.com/ItinerisLtd/itineris-disable-xml-rpc
  * Description:     Disable WordPress XML-RPC via actions and filters.
- * Version:         0.1.1
+ * Version:         0.2.0
  * Author:          Itineris Limited
  * Author URI:      https://itineris.co.uk
  * License:         GPL-2.0-or-later
